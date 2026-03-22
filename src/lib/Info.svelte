@@ -45,6 +45,7 @@
                 <h1 class="text-2xl">Games I play:</h1>
                 <ul>
                     <li>- Uma Musume: Pretty Derby</li>
+                    <li>- Monster Hunter (earlier gens)</li>
                 </ul>
             </div>
 

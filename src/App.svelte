@@ -1,5 +1,6 @@
 <script>
   import Info from "./lib/Info.svelte";
+  import Footer from "./lib/Footer.svelte";
 </script>
 
 <div id="main">
@@ -9,4 +10,6 @@
   <br />
 
   <Info />
+  <br>
+  <Footer />
 </div>

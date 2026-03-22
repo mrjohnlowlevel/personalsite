@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/mrjohnlowlevel.github.io/personalsite/',
+  base: '/personalsite/',
   plugins: [
     svelte(),
     tailwindcss()

@@ -1,11 +1,25 @@
+<script>
+    const gifs = [
+        "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW1mdmJwN2RjeWljaDRwY2plN3pnZDJubXA0emtubWdsdWozNmozdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dwo8ReUwBZpLekoyWl/giphy.gif",
+        "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXZqbGJhNzh2eWQ0cmFiMHhnZ3R5eW0yd2NjdHAxdTV2Z3pmd3hlZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0x4EWpH7bmpd92geYb/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9vOXNvdTFmdXJ4cWYxZnU5Y2djOG1zc2h6b216bnd6MnJjeDB0cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SgcYznFN1KpkfWS9eP/giphy.gif"
+    ];
+
+    const min = 1;
+    const max = 3;
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    
+    let selected_gif = gifs[randomNumber - 1] // lazy solution to keep it 0-2
+</script>
+
 <div id="information">
     <!--START BLOCK INFO-->
 
     <div id="brief" class="grid grid-cols-3 content-stretch gap-3 mb-5">
         <p class="text-center">My name is Wunderbar!</p>
         <img
-            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnVycDJ0YXVia3hmMGEwcTNmc2ZubWI5c3R6MjFpMXBkZDJ1MG1uOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dwo8ReUwBZpLekoyWl/giphy.gif"
-            alt="Chrono Genesis and Curren Bouquetd'or"
+            src="{selected_gif}"
+            alt="Random GIF"
             class="rounded"
         />
         <img

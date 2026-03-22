@@ -10,7 +10,7 @@
         />
         <img
             alt="Forever Young 2025 Breeders' Cup Classic"
-            src="/ebayanvscousinanddude.jpeg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElPd6htVM-0usm89ntbBQhW74qpmSN71nNA&s"
             class="rounded align-self-right"
         />
     </div>

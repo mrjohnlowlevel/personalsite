@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+    --animate-carousel: carousel 10s linear infinite;
+
+    @keyframes carousel {
+    	from { transform: translateX(0); }
+    	to   { transform: translateX(-1200px); }
+    }
+}

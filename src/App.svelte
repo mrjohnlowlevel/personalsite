@@ -6,13 +6,13 @@
 <div id="main">
 	<div id="carousel" class="text-4xl bg-red-400 p-1 font-mono uppercase shadow shadow-neutral-900 overflow-hidden">
 		<div aria-hidden="true" id="group" class="w-max flex gap-0 animate-carousel">
-			<span class="flex-[0_0_400px]">Hello, World!</span>
-			<span class="flex-[0_0_400px]">Guten Tag, Welt!</span>
-			<span class="flex-[0_0_400px]">Bonjour, le monde!</span>
+			<span class="flex-[0_0_400px]">Morning!</span>
+			<span class="flex-[0_0_400px]">Guten Tag!</span>
+			<span class="flex-[0_0_400px]">Bonjour!</span>
 
-			<span class="flex-[0_0_400px]">Hello, World!</span>
-			<span class="flex-[0_0_400px]">Guten Tag, Welt!</span>
-			<span class="flex-[0_0_400px]">Bonjour, le monde!</span>
+			<span class="flex-[0_0_400px]">Good Day!</span>
+			<span class="flex-[0_0_400px]">Guten Abend!</span>
+			<span class="flex-[0_0_400px]">Bonsoir!</span>
 		</div>
 	</div>
 	<br />

@@ -40,12 +40,12 @@
         </a>
     </div>
 
-    <div id="background" class="bg-amber-100 shadow shadow-black">
+    <div id="background" class="bg-[#7a91b0] shadow shadow-black">
         <hr />
-        <div id="interest-lists" class="ml-4 m-4 grid grid-cols-2 gap-y-2">
+        <div id="interest-lists" class="ml-4 m-4 grid grid-cols-2 gap-4">
             <!--START LISTS-->
 
-            <div id="interest">
+            <div id="interest" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">My Interest:</h1>
                 <ul>
                     <li>- Horse Racing</li>
@@ -55,7 +55,7 @@
                 </ul>
             </div>
 
-            <div id="languages">
+            <div id="languages" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">Computer Languages I know:</h1>
                 <ul>
                     <li>- Rust</li>
@@ -66,15 +66,14 @@
                 </ul>
             </div>
 
-            <div id="games">
+            <div id="games" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">Games I play:</h1>
                 <ul>
                     <li>- Uma Musume: Pretty Derby</li>
-                    <li>- Monster Hunter (earlier gens)</li>
                 </ul>
             </div>
 
-            <div id="artist">
+            <div id="artist" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">Artists I listen to:</h1>
                 <ul>
                     <li>- 安全地帯 (Anzen Chitai)</li>

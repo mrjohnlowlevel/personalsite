@@ -1,15 +1,33 @@
 <script>
-  import Info from "./lib/Info.svelte";
-  import Footer from "./lib/Footer.svelte";
+	import Info from "./lib/Info.svelte";
+	import Footer from "./lib/Footer.svelte";
 </script>
 
 <div id="main">
-  <h1 class="text-4xl text-center bg-red-400 p-1 font-mono uppercase shadow shadow-neutral-900">
-    Hello, World!
-  </h1>
-  <br />
+	<div id="carousel" class="text-4xl bg-red-400 p-1 font-mono uppercase shadow shadow-neutral-900 overflow-hidden">
+		<div aria-hidden="true" id="group" class="w-max flex gap-0 animate-carousel">
+			<span class="flex-[0_0_400px]">Hello, World!</span>
+			<span class="flex-[0_0_400px]">Guten Tag, Welt!</span>
+			<span class="flex-[0_0_400px]">Bonjour, le monde!</span>
 
-  <Info />
-  <br>
-  <Footer />
+			<span class="flex-[0_0_400px]">Hello, World!</span>
+			<span class="flex-[0_0_400px]">Guten Tag, Welt!</span>
+			<span class="flex-[0_0_400px]">Bonjour, le monde!</span>
+		</div>
+	</div>
+	<br />
+
+	<Info />
+	<br />
+	<Footer />
 </div>
+
+<style>
+	#carousel {
+		scrollbar-width: none;
+	}
+
+	#carousel::-webkit-scrollbar {
+		display: none;
+	}
+</style>

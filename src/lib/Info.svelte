@@ -18,7 +18,7 @@
     <div
         transition:fade={{ delay: 200, duration: 300 }}
         id="brief"
-        class="grid grid-cols-3 content-stretch gap-3 mb-5"
+        class="grid grid-cols-1 md:grid-cols-3 content-stretch gap-3 mb-5 justify-items-center"
     >
         <p class="text-center font-bold">My name is Wunderbar!</p>
         <a href="https://en.wikipedia.org/wiki/Chrono_Genesis">

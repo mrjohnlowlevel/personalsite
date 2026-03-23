@@ -1,35 +1,46 @@
 <script>
+    import { fade } from "svelte/transition";
+
     const gifs = [
         "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW1mdmJwN2RjeWljaDRwY2plN3pnZDJubXA0emtubWdsdWozNmozdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dwo8ReUwBZpLekoyWl/giphy.gif",
         "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXZqbGJhNzh2eWQ0cmFiMHhnZ3R5eW0yd2NjdHAxdTV2Z3pmd3hlZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0x4EWpH7bmpd92geYb/giphy.gif",
-        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9vOXNvdTFmdXJ4cWYxZnU5Y2djOG1zc2h6b216bnd6MnJjeDB0cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SgcYznFN1KpkfWS9eP/giphy.gif"
+        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9vOXNvdTFmdXJ4cWYxZnU5Y2djOG1zc2h6b216bnd6MnJjeDB0cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SgcYznFN1KpkfWS9eP/giphy.gif",
     ];
 
-    const min = 1;
-    const max = 3;
-    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-    
-    let selected_gif = gifs[randomNumber - 1] // lazy solution to keep it 0-2
+    const randomNumber = Math.floor(Math.random() * gifs.length);
+
+    let selected_gif = gifs[randomNumber];
 </script>
 
 <div id="information">
     <!--START BLOCK INFO-->
 
-    <div id="brief" class="grid grid-cols-3 content-stretch gap-3 mb-5">
-        <p class="text-center">My name is Wunderbar!</p>
-        <img
-            src="{selected_gif}"
-            alt="Random GIF"
-            class="rounded"
-        />
-        <img
-            alt="Forever Young 2025 Breeders' Cup Classic"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElPd6htVM-0usm89ntbBQhW74qpmSN71nNA&s"
-            class="rounded"
-        />
+    <div
+        transition:fade={{ delay: 200, duration: 300 }}
+        id="brief"
+        class="grid grid-cols-3 content-stretch gap-3 mb-5"
+    >
+        <p class="text-center font-bold">My name is Wunderbar!</p>
+        <a href="https://en.wikipedia.org/wiki/Chrono_Genesis">
+            <img
+                src={selected_gif}
+                loading="eager"
+                alt="Random GIF"
+                class="rounded shadow shadow-black hover:scale-105 transition-transform duration-300"
+            />
+        </a>
+
+        <a href="https://www.racingpost.com/results/444/del-mar/2025-11-01/906888">
+            <img
+                alt="Forever Young 2025 Breeders' Cup Classic"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElPd6htVM-0usm89ntbBQhW74qpmSN71nNA&s"
+                loading="eager"
+                class="rounded shadow shadow-black hover:scale-105 transition-transform duration-300"
+            />
+        </a>
     </div>
 
-    <div id="background" class="bg-amber-100">
+    <div id="background" class="bg-amber-100 shadow shadow-black">
         <hr />
         <div id="interest-lists" class="ml-4 m-4 grid grid-cols-2 gap-y-2">
             <!--START LISTS-->

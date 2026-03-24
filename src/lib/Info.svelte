@@ -22,7 +22,7 @@
         id="brief"
         class="grid grid-cols-1 md:grid-cols-3 content-stretch gap-3 mb-5 justify-items-center"
     >
-        <p class="text-center text-[20px] md:text-[50px] font-bold">My name is Wunderbar!</p>
+        <h1 class="text-center text-[20px] md:text-[50px] font-bold">My name is Wunderbar!</h1>
         <a href="https://en.wikipedia.org/wiki/Chrono_Genesis" target="_blank" rel="noreferrer noopener">
             <img
                 src={selected_gif}
@@ -50,20 +50,18 @@
             <div id="interest" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">My Interest:</h1>
                 <ul>
-                    <li>- Horse Racing</li>
-                    <li>- Coding</li>
-                    <li>- Cooking</li>
-                    <li>- Music</li>
+                    {#each ["Coding", "Cooking", "Horse Racing", "Music"] as interest}
+                        <li>- {interest}</li>
+                    {/each}
                 </ul>
             </div>
 
             <div id="languages" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">Computer Languages I know:</h1>
                 <ul>
-                    <li>- Rust</li>
-                    <li>- Typescript</li>
-                    <li>- Python</li>
-                    <li>- C</li>
+                    {#each ["C", "Rust", "Typescript", "Python"] as lang}
+                        <li>- {lang}</li>
+                    {/each}
                 </ul>
             </div>
 
@@ -77,10 +75,9 @@
             <div id="artist" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">Artists I listen to:</h1>
                 <ul>
-                    <li>- Anzen Chitai</li>
-                    <li>- Fujii Kaze</li>
-                    <li>- Luther Vandross</li>
-                    <li>- Bruno Mars</li>
+                    {#each ["Anzen Chitai", "Fujii Kaze", "Bruno Mars", "Luther Vandross"] as artist}
+                        <li>- {artist}</li>
+                    {/each}
                 </ul>
             </div>
 

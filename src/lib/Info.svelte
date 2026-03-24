@@ -23,7 +23,7 @@
         class="grid grid-cols-1 md:grid-cols-3 content-stretch gap-3 mb-5 justify-items-center"
     >
         <p class="text-center text-[20px] md:text-[50px] font-bold">My name is Wunderbar!</p>
-        <a href="https://en.wikipedia.org/wiki/Chrono_Genesis">
+        <a href="https://en.wikipedia.org/wiki/Chrono_Genesis" target="_blank" rel="noreferrer noopener">
             <img
                 src={selected_gif}
                 loading="eager"
@@ -32,7 +32,7 @@
             />
         </a>
 
-        <a href="https://www.racingpost.com/results/444/del-mar/2025-11-01/906888">
+        <a href="https://www.racingpost.com/results/444/del-mar/2025-11-01/906888" target="_blank" rel="noreferrer noopener">
             <img
                 alt="Forever Young 2025 Breeders' Cup Classic"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElPd6htVM-0usm89ntbBQhW74qpmSN71nNA&s"

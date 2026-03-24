@@ -5,6 +5,8 @@
         "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW1mdmJwN2RjeWljaDRwY2plN3pnZDJubXA0emtubWdsdWozNmozdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dwo8ReUwBZpLekoyWl/giphy.gif",
         "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXZqbGJhNzh2eWQ0cmFiMHhnZ3R5eW0yd2NjdHAxdTV2Z3pmd3hlZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0x4EWpH7bmpd92geYb/giphy.gif",
         "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG9vOXNvdTFmdXJ4cWYxZnU5Y2djOG1zc2h6b216bnd6MnJjeDB0cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SgcYznFN1KpkfWS9eP/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTh1dGY2bzgweTFpdW96MWRuY3ZtOW5uZjA4enZyaTVjcXAzd3J0cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aUe4b0CuV4nXq9ZpDt/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmR2b2N0ajBma3FxOXBvYzVqYmF6emxsZWhxNzhhMWZsd3V0ZWMzdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1IxfBx0jyAnK3z6Ots/giphy.gif",
     ];
 
     const randomNumber = Math.floor(Math.random() * gifs.length);
@@ -20,7 +22,7 @@
         id="brief"
         class="grid grid-cols-1 md:grid-cols-3 content-stretch gap-3 mb-5 justify-items-center"
     >
-        <p class="text-center font-bold">My name is Wunderbar!</p>
+        <p class="text-center text-[20px] md:text-[50px] font-bold">My name is Wunderbar!</p>
         <a href="https://en.wikipedia.org/wiki/Chrono_Genesis">
             <img
                 src={selected_gif}
@@ -59,7 +61,6 @@
                 <h1 class="text-2xl">Computer Languages I know:</h1>
                 <ul>
                     <li>- Rust</li>
-                    <li>- Assembly (x86-64 using NASM)</li>
                     <li>- Typescript</li>
                     <li>- Python</li>
                     <li>- C</li>
@@ -69,16 +70,16 @@
             <div id="games" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">Games I play:</h1>
                 <ul>
-                    <li>- Uma Musume: Pretty Derby</li>
+                    <li>- Uma Musume</li>
                 </ul>
             </div>
 
             <div id="artist" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">Artists I listen to:</h1>
                 <ul>
-                    <li>- 安全地帯 (Anzen Chitai)</li>
-                    <li>- 藤井風 (Fujii Kaze)</li>
-                    <li>- Luther Vadross</li>
+                    <li>- Anzen Chitai</li>
+                    <li>- Fujii Kaze</li>
+                    <li>- Luther Vandross</li>
                     <li>- Bruno Mars</li>
                 </ul>
             </div>

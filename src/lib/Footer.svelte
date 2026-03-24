@@ -4,7 +4,7 @@
         <li
             class="text-blue-500 transition-colors duration-200 hover:text-blue-200"
         >
-            <a href="https://discord.gg/m9dheqW84T"
+            <a href="https://discord.gg/m9dheqW84T" target="_blank" rel="noreferrer noopener"
                 >▷ Discord server: Fizz Pop</a
             >
         </li>
@@ -12,12 +12,12 @@
         <li
             class="text-gray-400 transition-colors duration-200 hover:text-green-200"
         >
-            <a href="https://github.com/mrjohnlowlevel"
+            <a href="https://github.com/mrjohnlowlevel" target="_blank" rel="noreferrer noopener"
                 >▷ Github: mrjohnlowlevel</a
             >
         </li>
     </ul>
 
     <br>
-    <a href="https://svelte.dev/"><p class="font-extralight transition-colors duration-200 hover:text-orange-500">Made with Svelte (because I'm not a coward)</p></a>
+    <a href="https://svelte.dev/" target="_blank" rel="noreferrer noopener"><p class="font-extralight transition-colors duration-200 hover:text-orange-500">Made with Svelte (because I'm not a coward)</p></a>
 </div>

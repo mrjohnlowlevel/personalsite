@@ -1,6 +1,8 @@
 <script>
 	import Info from "./lib/Info.svelte";
 	import Footer from "./lib/Footer.svelte";
+
+	console.log("%c君はス・テ・キ", "color: oklch(70.4% 0.191 22.216)")
 </script>
 
 <div id="main">

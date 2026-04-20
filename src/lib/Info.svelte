@@ -75,7 +75,7 @@
             <div id="artist" class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300">
                 <h1 class="text-2xl">Artists I listen to:</h1>
                 <ul>
-                    {#each ["Anzen Chitai", "Fujii Kaze", "Bruno Mars", "Luther Vandross"] as artist}
+                    {#each ["Anzen Chitai", "Fujii Kaze", "Ken Hirai", "Anri"] as artist}
                         <li>- {artist}</li>
                     {/each}
                 </ul>

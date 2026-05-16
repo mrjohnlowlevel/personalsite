@@ -14,7 +14,7 @@
     ];
 
     const randomGifNumber = getRandomNum(gifs.length);
-    const ebayan_real_or_not = getRandomNum(2); // state: 1, IRL race; 2 Uma
+    const ebayan_real_or_not = getRandomNum(2);
     console.log(ebayan_real_or_not);
 
     let selected_gif = gifs[randomGifNumber];
@@ -65,14 +65,15 @@
 
         {#if ebayan_real_or_not == 1}
             <a
-                href="https://www.racingpost.com/results/444/del-mar/2025-11-01/906888"
+                href="https://en.wikipedia.org/wiki/Forever_Young_(horse)"
                 target="_blank"
                 rel="noreferrer noopener"
             >
                 <img
-                    alt="Forever Young 2025 Breeders' Cup Classic"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSElPd6htVM-0usm89ntbBQhW74qpmSN71nNA&s"
+                    alt="Forever Young (horse) [2026 Saudi Cup (Netkeiba)]"
+                    src="https://cdn.netkeiba.com/img.en//db/show_photo.php?horse_id=2021105727&no=101673&tn=&tmp=no"
                     loading="lazy"
+                    width="355px"
                     class="rounded shadow shadow-black hover:scale-105 transition-transform duration-300"
                 />
             </a>

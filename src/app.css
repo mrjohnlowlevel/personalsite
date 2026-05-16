@@ -7,4 +7,6 @@
     	from { transform: translateX(0); }
     	to   { transform: translateX(-1200px); }
     }
+
+    --color-crimson: #5c0415;
 }

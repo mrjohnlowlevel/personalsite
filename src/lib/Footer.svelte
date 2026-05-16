@@ -1,4 +1,5 @@
-<div class="bg-[#222936] border-2 border-cyan-900">
+<div class="bg-[#6f0016]">
+    <div class="bg-crimson p-4"></div>
     <h1 class="pt-2 pl-2 text-2xl font-mono uppercase text-white">My socials</h1>
     <ul class="ml-2">
 

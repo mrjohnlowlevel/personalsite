@@ -15,8 +15,8 @@
     </h1>
     <ul class="space-y-1">
         <li>
-            <a href="https://github.com/mrjohnlowlevel" target="_blank" rel="noreferrer noopener" class="text-gray-400 transition-colors duration-200 hover:text-green-200">
-                ▷ Github: mrjohnlowlevel
+            <a href="https://github.com/goldikova" target="_blank" rel="noreferrer noopener" class="text-gray-400 transition-colors duration-200 hover:text-green-200">
+                ▷ Github:Goldikova 
             </a>
         </li>
         <li>

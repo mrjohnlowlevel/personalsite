@@ -1,8 +1,8 @@
-<!--My top 5 horses lolol-->
-
+<!-- My top 5 horses lolol -->
 <script lang="ts">
-    // s = king num. 1 = top, 0 rest
-    const horses = [
+    import type { HorseData } from "../../util/types";
+
+    const horses: HorseData[] = [
         {
             name: "Forever Young",
             s: 1,
@@ -10,9 +10,12 @@
             nation: "🇯🇵",
             major_wins: [
                 "Zen Nippon Nisai Yushun",
+                "Saudi Derby",
+                "UAE Derby",
                 "Japan Dirt Classic",
                 "Tokyo Daishoten",
                 "Saudi Cup (2x)",
+                "Nippon TV Hai",
                 "Breeders' Cup Classic",
             ],
         },
@@ -22,9 +25,12 @@
             wiki: "https://en.wikipedia.org/wiki/Chrono_Genesis",
             nation: "🇯🇵",
             major_wins: [
+                "Ivy Stakes",
+                "Queen Cup",
+                "Kyoto Kinen",
                 "Shuka Sho",
                 "Takarazuka Kinen (2x)",
-                "Arima Kinen)",
+                "Arima Kinen",
             ],
         },
         {
@@ -36,6 +42,7 @@
                 "Hong Kong Classic Mile",
                 "Hong Kong Derby",
                 "QEII Cup (4x)",
+                "Jockey Club Cup (3x)",
                 "Hong Kong Cup (4x)",
                 "Cox Plate",
                 "Hong Kong Gold Cup (2x)",
@@ -50,10 +57,13 @@
             wiki: "https://en.wikipedia.org/wiki/White_Abarrio",
             nation: "🇺🇸",
             major_wins: [
+                "Holy Bull Stakes",
                 "Florida Derby",
                 "Whitney Stakes",
+                "Ghostzapper Stakes",
                 "Breeders' Cup Classic",
                 "Pegasus World Cup",
+                "Oaklawn Handicap"
             ],
         },
         {
@@ -61,61 +71,74 @@
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Daryz",
             nation: "🇫🇷",
-            major_wins: [
-                "Prix de l'Arc De Triomphe",
-                "Prix Ganay",
-            ],
+            major_wins: ["Prix Eugène Adam","Prix de l'Arc De Triomphe", "Prix Ganay"],
         },
     ];
 </script>
 
 <div class="mt-10 shadow shadow-black rounded-2xl">
-    <div class="bg-crimson rounded-t-2xl p-2">
-        <h1 class="font-bold text-2xl text-center">My Top 5 Racehorses</h1>
+    <div class="bg-[#70a0e0] rounded-t-2xl p-2 border">
+        <h1 class="font-bold text-2xl text-center">My Top 5 Favourite Racehorses</h1>
     </div>
-    <div id="horses" class="bg-amber-900 rounded-b-2xl p-5">
+
+    <div
+        id="horses"
+        class="bg-[#7a91b0] rounded-b-2xl p-5 border flex flex-col gap-5"
+    >
         {#each horses as horse}
             {#if horse.s == 1}
-                <a href={horse.wiki}>
-                    <div class="flex justify-center">
-                        <div
-                            class="border w-fit h-fit p-4 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300"
-                        >
-                            <p class="text-center">
-                                {horse.name} [{horse.nation}]
-                            </p>
-                            <hr />
-                            <h2>Major Wins:</h2>
-                            <ul>
-                                {#each horse.major_wins as win}
-                                    <li>- {win}</li>
-                                {/each}
-                            </ul>
-                        </div>
-                    </div></a
+                <a
+                    href={horse.wiki}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="w-full flex justify-center"
                 >
+                    <div
+                        class="border w-full max-w-md p-4 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300"
+                    >
+                        <p class="text-center font-bold">
+                            {horse.name} [{horse.nation}]
+                        </p>
+                        <hr class="my-2" />
+                        <h2 class="font-semibold">Major Wins:</h2>
+                        <ul>
+                            {#each horse.major_wins as win}
+                                <li class="list-disc list-inside text-sm">
+                                    {win}
+                                </li>
+                            {/each}
+                        </ul>
+                    </div>
+                </a>
             {/if}
         {/each}
 
-        <div class="grid grid-cols-2 gap-5 justify-items-center">
+        <div class="grid grid-cols-2 gap-5 items-stretch">
             {#each horses as horse}
                 {#if horse.s != 1}
-                    <a href={horse.wiki}
-                        ><div
-                            class="border w-fit h-fit p-4 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300"
+                    <a
+                        href={horse.wiki}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="flex h-full w-full"
+                    >
+                        <div
+                            class="border w-full h-full p-4 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300 flex flex-col"
                         >
-                            <p class="text-center">
+                            <p class="text-center font-bold">
                                 {horse.name} [{horse.nation}]
                             </p>
-                            <hr />
-                            <h2>Major Wins:</h2>
-                            <ul>
+                            <hr class="my-2" />
+                            <h2 class="font-semibold">Major Wins:</h2>
+                            <ul class="grow">
                                 {#each horse.major_wins as win}
-                                <li>- {win}</li>
+                                    <li class="list-disc list-inside text-sm">
+                                        {win}
+                                    </li>
                                 {/each}
                             </ul>
-                        </div></a
-                    >
+                        </div>
+                    </a>
                 {/if}
             {/each}
         </div>

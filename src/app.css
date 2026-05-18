@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 @import "tailwindcss";
+
+body {
+    font-family: 'Roboto';
+}
 
 @theme {
     --animate-carousel: carousel 10s linear infinite;

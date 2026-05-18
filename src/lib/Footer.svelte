@@ -28,6 +28,6 @@
 
     <br />
     <a href="https://svelte.dev/" target="_blank" rel="noreferrer noopener" class="inline-block mt-4 text-sm font-extralight transition-colors duration-200 hover:text-orange-500">
-        Made with Svelte (because I'm not a coward)
+        Made with Svelte
     </a>
 </div>

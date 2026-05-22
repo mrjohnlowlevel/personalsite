@@ -9,14 +9,14 @@
 
 <div class="mb-5">
     <div id="me" class="pl-2">
-        <div class="bg-[#5e02cf] p-2 rounded-t-2xl shadow shadow-black">
+        <div class="bg-[#c73e04] p-2 rounded-t-2xl shadow shadow-black">
             <h1 class="text-center font-bold text-2xl">About Me</h1>
         </div>
         <hr />
-        <div id="yaps" class="bg-[#9d80ff] pl-2 shadow shadow-black rounded-b-2xl pb-4 text-center">
+        <div id="yaps" class="bg-[#ffbd94] pt-2 pl-2 shadow shadow-black rounded-b-2xl pb-4 text-center font-mono">
             <p>
-                Hi! My name is Wunderbar/Jon Free (online names).
-                I'm a hobbyist coder and a horse racing fan.
+                Hi! My name is Wunderbar/Jon Free (online name and pseudonym).
+                I'm a hobbyist coder and a huge horse racing nerd.
             </p>
 
             <br>

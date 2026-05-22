@@ -5,6 +5,7 @@
     const horses: HorseData[] = [
         {
             name: "Forever Young",
+            gender: "Horse",
             s: 1,
             wiki: "https://en.wikipedia.org/wiki/Forever_Young_(horse)",
             nation: "🇯🇵",
@@ -21,6 +22,7 @@
         },
         {
             name: "Chrono Genesis",
+            gender: "Mare",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Chrono_Genesis",
             nation: "🇯🇵",
@@ -35,6 +37,7 @@
         },
         {
             name: "Romantic Warrior",
+            gender: "Gelding",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Romantic_Warrior_(horse)",
             nation: "🇭🇰",
@@ -53,6 +56,7 @@
         },
         {
             name: "White Abarrio",
+            gender: "Horse",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/White_Abarrio",
             nation: "🇺🇸",
@@ -63,22 +67,30 @@
                 "Ghostzapper Stakes",
                 "Breeders' Cup Classic",
                 "Pegasus World Cup",
-                "Oaklawn Handicap"
+                "Oaklawn Handicap",
             ],
         },
         {
             name: "Daryz",
+            gender: "Colt",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Daryz",
             nation: "🇫🇷",
-            major_wins: ["Prix Eugène Adam","Prix de l'Arc De Triomphe", "Prix Ganay"],
+            major_wins: [
+                "Prix Eugène Adam",
+                "Prix de l'Arc De Triomphe",
+                "Prix Ganay",
+                "Prix Aga Khan IV",
+            ],
         },
     ];
 </script>
 
 <div class="mt-10 shadow shadow-black rounded-2xl">
     <div class="bg-[#70a0e0] rounded-t-2xl p-2 border">
-        <h1 class="font-bold text-2xl text-center">My Top 5 Favourite Racehorses</h1>
+        <h1 class="font-bold text-2xl text-center">
+            My Top 5 Favourite Racehorses
+        </h1>
     </div>
 
     <div
@@ -99,6 +111,7 @@
                         <p class="text-center font-bold">
                             {horse.name} [{horse.nation}]
                         </p>
+                        <h3>Gender: {horse.gender}</h3>
                         <hr class="my-2" />
                         <h2 class="font-semibold">Major Wins:</h2>
                         <ul>
@@ -128,6 +141,7 @@
                             <p class="text-center font-bold">
                                 {horse.name} [{horse.nation}]
                             </p>
+                            <h3>Gender: {horse.gender}</h3>
                             <hr class="my-2" />
                             <h2 class="font-semibold">Major Wins:</h2>
                             <ul class="grow">

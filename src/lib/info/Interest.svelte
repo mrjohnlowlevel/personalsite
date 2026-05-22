@@ -26,7 +26,7 @@
 
         {#each cards as card}
             <div
-                class="border w-fit p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300"
+                class="border w-full h-full p-2 rounded bg-white shadow shadow-black hover:scale-105 transition-transform duration-300"
             >
                 <h1 class="text-2xl">{card.title}</h1>
                 <ul>

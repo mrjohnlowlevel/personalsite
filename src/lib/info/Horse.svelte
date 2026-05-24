@@ -52,6 +52,7 @@
                 "Yasuda Kinen",
                 "Jebel Hatta",
                 "Stewards' Cup",
+                "Champions And Chaters Cup",
             ],
         },
         {

@@ -2,7 +2,7 @@
     const projects = ["Discord Duck Pet", "... (not much besides that)"]
 </script>
 
-<div id="projects" class="shadow rounded-b-2xl pb-2">
+<div id="projects" class="shadow-2xl rounded-b-2xl pb-2">
     <div class="bg-[#00a2ff9e] p-5 rounded-t-2xl">
         <h1 class="text-center">My Current Projects</h1>
     </div>

@@ -5,7 +5,10 @@
     const horses: HorseData[] = [
         {
             name: "Forever Young",
+            description:
+                "The greatest dirt horse Japan has ever seen and the first Japanese to win the Breeders' Cup Classic",
             gender: "Horse",
+            pedigree: "by Real Steel (JPN)",
             s: 1,
             wiki: "https://en.wikipedia.org/wiki/Forever_Young_(horse)",
             nation: "🇯🇵",
@@ -22,7 +25,10 @@
         },
         {
             name: "Chrono Genesis",
+            description:
+                "The only other horse besides Gold Ship to win the Takarazuka Kinen twice",
             gender: "Mare",
+            pedigree: "by Bago (FR)",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Chrono_Genesis",
             nation: "🇯🇵",
@@ -37,7 +43,10 @@
         },
         {
             name: "Romantic Warrior",
+            description:
+                "The richest horse in history without contest. The third horse to win the Hong Kong triple crown besides River Verdon (1994) and Voyage Bubble (2025)",
             gender: "Gelding",
+            pedigree: "by Acclamation (GB)",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Romantic_Warrior_(horse)",
             nation: "🇭🇰",
@@ -57,7 +66,10 @@
         },
         {
             name: "White Abarrio",
+            description:
+                "The Unc who just NEVER QUIT. THE GOAT. Been racing since 2021 and still had it in him to defeat Sovereignty in the Oaklawn; basically Allen Jerkens",
             gender: "Horse",
+            pedigree: "by Race Day (USA)",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/White_Abarrio",
             nation: "🇺🇸",
@@ -73,7 +85,10 @@
         },
         {
             name: "Daryz",
+            description:
+                "A newer colt from Aga Khan by Sea The Stars. He's on DEMON MODE.",
             gender: "Colt",
+            pedigree: "by Sea The Stars (IRE)",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Daryz",
             nation: "🇫🇷",
@@ -112,7 +127,14 @@
                         <p class="text-center font-bold">
                             {horse.name} [{horse.nation}]
                         </p>
-                        <h3>Gender: {horse.gender}</h3>
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <h3>Gender: {horse.gender}</h3>
+                            </div>
+                            <div>
+                                <p class="text-sm text-end">{horse.pedigree}</p>
+                            </div>
+                        </div>
                         <hr class="my-2" />
                         <h2 class="font-semibold">Major Wins:</h2>
                         <ul>
@@ -122,6 +144,8 @@
                                 </li>
                             {/each}
                         </ul>
+                        <hr class="my-2" />
+                        <p class="text-sm">Note: {horse.description}</p>
                     </div>
                 </a>
             {/if}
@@ -142,7 +166,14 @@
                             <p class="text-center font-bold">
                                 {horse.name} [{horse.nation}]
                             </p>
-                            <h3>Gender: {horse.gender}</h3>
+                            <div class="grid grid-cols-2">
+                                <div>
+                                    <h3>Gender: {horse.gender}</h3>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-end">{horse.pedigree}</p>
+                                </div>
+                            </div>
                             <hr class="my-2" />
                             <h2 class="font-semibold">Major Wins:</h2>
                             <ul class="grow">
@@ -152,6 +183,8 @@
                                     </li>
                                 {/each}
                             </ul>
+                            <hr class="my-4" />
+                            <p class="text-sm">Note: {horse.description}</p>
                         </div>
                     </a>
                 {/if}

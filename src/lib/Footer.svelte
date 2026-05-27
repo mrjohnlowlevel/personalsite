@@ -1,11 +1,11 @@
 <script lang="ts">
+    import { copyToClipboard } from "../util/util";
+
     const discord_user: string = "ushba_tesoro";
 
-    const copyToClipboard = () => {
-        navigator.clipboard.writeText(discord_user)
-            .then(() => alert("Copied to clipboard!"))
-            .catch((err) => alert(`Error! Reason ${err}`));
-    };
+    const discordUserClipboard = () => {
+        copyToClipboard(discord_user)
+    }
 </script>
 
 <div class="bg-crimson p-4 rounded-t"></div>
@@ -20,7 +20,7 @@
             </a>
         </li>
         <li>
-            <button onclick={copyToClipboard} class="text-blue-400 transition-colors duration-200 hover:text-green-200 text-left">
+            <button onclick={discordUserClipboard} class="text-blue-400 transition-colors duration-200 hover:text-green-200 text-left">
                 ▷ Discord: {discord_user}
             </button>
         </li>

@@ -1,11 +1,11 @@
 <script lang="ts">
-    const projects = ["Discord Duck Pet", "... (not much besides that)"]
+    const projects = ["Discord Duck Pet", "School gamejam (secret)", "... (not much besides that)"];
 </script>
 
-<div id="projects" class="shadow-2xl rounded-b-2xl pb-2">
-    <div class="bg-[#00a2ff9e] p-5 rounded-t-2xl">
-        <h1 class="text-center">My Current Projects</h1>
-    </div>
+<div id="projects" class="shadow shadow-black rounded-2xl pb-2">
+    <h1 class="text-center bg-[#107bba79] p-5 rounded-t-2xl">
+        My Current Projects
+    </h1>
     <div class="pt-2">
         <ul>
             {#each projects as pj}

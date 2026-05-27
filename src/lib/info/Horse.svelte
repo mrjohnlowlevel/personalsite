@@ -8,7 +8,7 @@
             description:
                 "The greatest dirt horse Japan has ever seen and the first Japanese to win the Breeders' Cup Classic",
             gender: "Horse",
-            pedigree: "by Real Steel (JPN)",
+            sire: "Real Steel (JPN)",
             s: 1,
             wiki: "https://en.wikipedia.org/wiki/Forever_Young_(horse)",
             nation: "🇯🇵",
@@ -28,7 +28,7 @@
             description:
                 "The only other horse besides Gold Ship to win the Takarazuka Kinen twice",
             gender: "Mare",
-            pedigree: "by Bago (FR)",
+            sire: "Bago (FR)",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Chrono_Genesis",
             nation: "🇯🇵",
@@ -46,7 +46,7 @@
             description:
                 "The richest horse in history without contest. The third horse to win the Hong Kong triple crown besides River Verdon (1994) and Voyage Bubble (2025)",
             gender: "Gelding",
-            pedigree: "by Acclamation (GB)",
+            sire: "Acclamation (GB)",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Romantic_Warrior_(horse)",
             nation: "🇭🇰",
@@ -69,7 +69,7 @@
             description:
                 "The Unc who just NEVER QUIT. THE GOAT. Been racing since 2021 and still had it in him to defeat Sovereignty in the Oaklawn; basically Allen Jerkens",
             gender: "Horse",
-            pedigree: "by Race Day (USA)",
+            sire: "Race Day (USA)",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/White_Abarrio",
             nation: "🇺🇸",
@@ -88,7 +88,7 @@
             description:
                 "A newer colt from Aga Khan by Sea The Stars. He's on DEMON MODE.",
             gender: "Colt",
-            pedigree: "by Sea The Stars (IRE)",
+            sire: "Sea The Stars (IRE)",
             s: 0,
             wiki: "https://en.wikipedia.org/wiki/Daryz",
             nation: "🇫🇷",
@@ -132,7 +132,7 @@
                                 <h3>Gender: {horse.gender}</h3>
                             </div>
                             <div>
-                                <p class="text-sm text-end">{horse.pedigree}</p>
+                                <p class="text-sm text-end">by {horse.sire}</p>
                             </div>
                         </div>
                         <hr class="my-2" />
@@ -171,7 +171,7 @@
                                     <h3>Gender: {horse.gender}</h3>
                                 </div>
                                 <div>
-                                    <p class="text-sm text-end">{horse.pedigree}</p>
+                                    <p class="text-sm text-end">by {horse.sire}</p>
                                 </div>
                             </div>
                             <hr class="my-2" />
